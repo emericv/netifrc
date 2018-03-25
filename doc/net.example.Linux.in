@@ -960,6 +960,18 @@
 #config_nas0="'192.168.0.1/24'"
 
 #-----------------------------------------------------------------------------
+# openvswitch - Production quality, multilayer virtual switch
+# Tool install: emerge net-misc/openvswitch
+
+# The usage of openvswitch bridge is similar to the standard bridge module
+
+# To add ports to bridge ovsbr
+#ovs_ovsvbr="eth0 eth1"
+# or dynamically add them when the interface comes up
+#ovsadd_ehh0_to="ovsvbr"
+#ovsadd_eth1_to="ovsvbr"
+
+#-----------------------------------------------------------------------------
 # Tunneling
 # WARNING: For tunneling it is highly recommended that you
 # emerge sys-apps/iproute2
